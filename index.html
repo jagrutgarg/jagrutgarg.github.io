@@ -1,20 +1,40 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SEO Test Site — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEO Test Site - Home</title>
   <meta name="description" content="A small test site for crawler verification." />
   <meta name="seo-verify" content="444581d22d731c2a09e11d4ef56f635b" />
   <link rel="canonical" href="https://jagrutgarg.github.io/" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TESTID12345"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TESTID12345');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SEO Test Site",
+    "url": "https://jagrutgarg.github.io/"
+  }
+  </script>
 </head>
 <body>
   <h1>Welcome to the SEO Test Site</h1>
-  <p>This site exists to test a website crawler. It has a normal page, a broken link, a noindex page, and a 3-hop redirect chain.</p>
+  <p>This site exists to test a website crawler, technical audit, and internal linking engine.</p>
   <nav>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="secret.html">Secret Page</a>
     <a href="redirect1.html">Start Redirect Chain</a>
+    <a href="mobile-bad.html">Mobile Bad Page</a>
+    <a href="slow.html">Slow Page</a>
+    <a href="duplicate-title-a.html">Duplicate Title A</a>
+    <a href="duplicate-title-b.html">Duplicate Title B</a>
   </nav>
 </body>
 </html>

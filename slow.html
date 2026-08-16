@@ -4,11 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Slow Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/analytics-sync.js"></script>
 </head>
 <body>
-  <h1>Slow Page</h1>
-  <img src="https://picsum.photos/2400/1600">
-  <p>This page has an oversized, unoptimized image with no alt text, no width/height, and no lazy loading.</p>
-  <a href="index.html">Back Home</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SEO Test Site</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Slow Page</h1>
+      <img src="https://picsum.photos/2400/1600">
+      <p>This page has an oversized, unoptimized image with no alt text, no width/height, and no lazy loading, plus a render-blocking script.</p>
+      <a href="index.html">Back Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SEO Test Site — a fixture for exercising crawler, audit, and SEO tooling. Not a real business.</div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
 </body>
 </html>

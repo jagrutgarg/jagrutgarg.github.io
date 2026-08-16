@@ -7,6 +7,7 @@
   <meta name="description" content="A small test site for crawler verification." />
   <meta name="seo-verify" content="7d8dd379ae970b05788d2733d6ae1b7e" />
   <link rel="canonical" href="https://jagrutgarg.github.io/" />
+  <link rel="stylesheet" href="css/style.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TESTID12345"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,17 +25,45 @@
   </script>
 </head>
 <body>
-  <h1>Welcome to the SEO Test Site</h1>
-  <p>This site exists to test a website crawler, technical audit, and internal linking engine.</p>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="secret.html">Secret Page</a>
-    <a href="redirect1.html">Start Redirect Chain</a>
-    <a href="mobile-bad.html">Mobile Bad Page</a>
-    <a href="slow.html">Slow Page</a>
-    <a href="duplicate-title-a.html">Duplicate Title A</a>
-    <a href="duplicate-title-b.html">Duplicate Title B</a>
-  </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SEO Test Site</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog/seo-checklist.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Welcome to the SEO Test Site</h1>
+      <p>This site exists to test a website crawler, technical audit, and internal linking engine.</p>
+
+      <div class="card-grid">
+        <div class="card"><a href="secret.html">Secret Page</a> — noindex page for indexability checks</div>
+        <div class="card"><a href="redirect1.html">Start Redirect Chain</a> — three-hop meta-refresh chain</div>
+        <div class="card"><a href="mobile-bad.html">Mobile Bad Page</a> — missing viewport meta tag</div>
+        <div class="card"><a href="slow.html">Slow Page</a> — oversized, unoptimized image</div>
+        <div class="card"><a href="duplicate-title-a.html">Duplicate Title A</a> — duplicate title/meta + two H1s</div>
+        <div class="card"><a href="duplicate-title-b.html">Duplicate Title B</a> — duplicate title/meta</div>
+        <div class="card"><a href="mobile-parity.html">Mobile Parity Mismatch</a> — content hidden on mobile only</div>
+        <div class="card"><a href="brand-mentions.html">Brand Mentions</a> — unlinked brand mention</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SEO Test Site — a fixture for exercising crawler, audit, and SEO tooling. Not a real business.</div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
 </body>
 </html>

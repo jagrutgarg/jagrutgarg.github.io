@@ -5,11 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pricing Plans</title>
   <meta name="description" content="Pricing for our SEO audit and keyword research plans." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/analytics-sync.js"></script>
 </head>
 <body>
-  <h1>Pricing Plans</h1>
-  <p>Starter Plan - $29/month. Includes crawling, keyword tracking, and monthly reports.</p>
-  <p>Pro Plan - $79/month. Adds competitor analysis and citation audits.</p>
-  <a href="index.html">Back Home</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SEO Test Site</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog/seo-checklist.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Pricing Plans</h1>
+      <div class="card-grid">
+        <div class="card">
+          <h2>Starter</h2>
+          <p>$29/month. Includes crawling, keyword tracking, and monthly reports.</p>
+        </div>
+        <div class="card">
+          <h2>Pro</h2>
+          <p>$79/month. Adds competitor analysis and citation audits.</p>
+        </div>
+      </div>
+      <p><a class="btn" href="index.html">Back Home</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SEO Test Site — a fixture for exercising crawler, audit, and SEO tooling. Not a real business.</div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+/* SEO Test Site — shared stylesheet
+   Intentionally ordinary: this exists so audit/speed/mobile tools have
+   real CSS to analyze. Do not "fix" pages that use styles differently on
+   purpose (mobile-bad.html has none; the parity-mismatch page hides
+   content by design). */
+
+:root {
+  --color-primary: #2455c9;
+  --color-ink: #1b2027;
+  --color-muted: #5b6470;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f3f5f9;
+  --color-border: #dde2ea;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--color-ink);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--color-ink);
+  font-size: 0.95rem;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+main { padding: 2.5rem 0; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: var(--color-bg-alt);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Desktop-only supplemental content block, intentionally absent on
+   narrow viewports — powers the desktop/mobile parity test fixture. */
+.desktop-only-content {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .main-nav { display: none; width: 100%; }
+  .main-nav.open { display: block; }
+  .nav-toggle { display: inline-block; }
+  .card-grid { grid-template-columns: 1fr; }
+  .desktop-only-content { display: none; }
+}

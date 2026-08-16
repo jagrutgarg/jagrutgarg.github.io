@@ -4,12 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - SEO Test Site</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <p>Reach out any time.</p>
-  <p>Deteroid Tech LLP, 114, Ram Nagar Rd, Krishna Nagar, New Delhi, 9876543210</p>
-  <a href="this-page-does-not-exist.html">Broken Link</a>
-  <a href="index.html">Back Home</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SEO Test Site</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog/seo-checklist.html">Blog</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Reach out any time.</p>
+      <p>Deteroid Tech LLP, 114, Ram Nagar Rd, Krishna Nagar, New Delhi, 9876543210</p>
+      <a href="this-page-does-not-exist.html">Broken Link</a><br>
+      <a href="index.html">Back Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">SEO Test Site — a fixture for exercising crawler, audit, and SEO tooling. Not a real business.</div>
+  </footer>
+
+  <script defer src="js/main.js"></script>
 </body>
 </html>

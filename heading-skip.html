@@ -1,22 +1,21 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Technical SEO Checklist</title>
-  <meta name="description" content="A checklist covering keyword research, internal linking, and site speed optimization." />
-  <link rel="canonical" href="https://jagrutgarg.github.io/blog/seo-checklist.html" />
+  <title>Heading Hierarchy Skip</title>
+  <meta name="description" content="A page whose heading levels skip from H1 straight to H4, for testing heading hierarchy checks." />
+  <link rel="canonical" href="https://jagrutgarg.github.io/heading-skip.html" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%94%8D</text></svg>" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html">SEO Test Site</a>
+      <a class="brand" href="index.html">SEO Test Site</a>
       <nav class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="technical-seo.html">Technical SEO Deep Dive</a></li>
+          <li><a href="index.html">Home</a></li>
         </ul>
       </nav>
       <button type="button" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
@@ -25,9 +24,11 @@
 
   <main>
     <div class="container">
-      <h1>The Technical SEO Checklist</h1>
-      <p>Before launch, review your keyword research, internal linking structure, and page speed optimization.</p>
-      <a href="technical-seo.html">Read: Technical SEO Deep Dive</a>
+      <h1>Heading Hierarchy Skip</h1>
+      <p>The heading below jumps straight from H1 to H4, skipping H2 and H3 entirely.</p>
+      <h4>This Should Be Flagged</h4>
+      <p>Your heading optimization check should flag this as a skipped heading level.</p>
+      <a href="index.html">Back Home</a>
     </div>
   </main>
 
@@ -35,6 +36,6 @@
     <div class="container">SEO Test Site — a fixture for exercising crawler, audit, and SEO tooling. Not a real business.</div>
   </footer>
 
-  <script defer src="../js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
